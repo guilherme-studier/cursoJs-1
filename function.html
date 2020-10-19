@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //procedimento
+
+        function sayHello () {
+            console.log('Hello from Funtion - School of Net')
+        }
+
+        var a = sayHello()
+        console.log(a)
+
+
+        //funcao
+        
+        // var number = 4 
+
+        // function square(){
+        //     return number * number
+        // }
+
+        // var b = square()
+        // var c = square()
+        // console.log(b)
+
+
+        var num = 5 // escopo global
+        var num = 10 //mesm variável definida duas vezes, sobresquevendo o primeiro
+        function square(num) {
+
+            var num = 4 //sobresquevendo o parâmetro, escopo individual
+            return num * num
+        }
+
+        var d = square(3)
+        console.log(d)
+    </script>
+</body>
+</html>
